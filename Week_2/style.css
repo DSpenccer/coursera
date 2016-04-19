@@ -1,5 +1,5 @@
 body {
-  background-color: white;
+  background-color: lightblue;
   font-size: 110%;
   text-align: center;
 
@@ -10,6 +10,7 @@ body {
   text-align: center;
   font-style: italic;
   color: black;
+
 }
 
 a:link, a:visited {
