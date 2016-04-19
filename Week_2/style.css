@@ -1,0 +1,26 @@
+body {
+  background-color: white;
+  font-size: 110%;
+  text-align: center;
+
+}
+
+.list,ul {
+  list-style: none;
+  text-align: center;
+  font-style: italic;
+  color: black;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  background-color: orange;
+  border: 1px solid orange;
+  color: black;
+  width: 200px;
+}
+
+a:hover, a:active {
+  background-color: red;
+  color: yellow;
+}
