@@ -27,3 +27,13 @@ a:hover, a:active {
   background-color: red;
   color: yellow;
 }
+
+#box {
+  text-align: center;
+  background-color: white;
+  padding: 15px 10px;
+  width: 430px;
+  margin-left: 500px;
+  box-sizing: border-box;
+
+}
