@@ -1,63 +1,69 @@
 body {
   font-size: 16px;
   color: #fff;
-  background-color: #61122f;
+  background: #99e6ff;
   font-family: 'Oxygen', sans-serif;
 }
 
 /** HEADER **/
-#header-nav {
-  background-color: #f6b319;
+#header-nav {   /*background color of header*/
+  background-color: #0080ff;
   border-radius: 0;
   border: 0;
 }
 
 #logo-img {
-  background: url('../images/restaurant-logo_large.png') no-repeat;
-  width: 150px;
-  height: 150px;
-  margin: 10px 15px 10px 0;
+  background: url('../images/logo_dog.png') no-repeat;
+  width: 127px;
+  height: 138px;
+  margin: 25px 20px 20px 0;
+  overflow: hidden;
 }
 
+
 .navbar-brand {
-  padding-top: 25px;
+  padding-top: 25px; /*padding of the company name*/
 }
 .navbar-brand h1 { /* Restaurant name */
   font-family: 'Lora', serif;
-  color: #557c3e;
+  color: white;
   font-size: 1.5em;
   text-transform: uppercase;
   font-weight: bold;
-  text-shadow: 1px 1px 1px #222;
+  text-shadow: 2px 2px 2px lightblue;
   margin-top: 0;
   margin-bottom: 0;
+  margin-left: 20px;
   line-height: .75;
 }
-.navbar-brand a:hover, .navbar-brand a:focus {
+.navbar-brand a:hover, .navbar-brand a:focus {  /*no underlining*/
   text-decoration: none;
 }
-.navbar-brand p { /* Kosher cert */
+.navbar-brand p { /* Text"in coopration with" */
   color: #000;
   text-transform: uppercase;
-  font-size: .7em;
+  font-size: .9em;
   margin-top: 15px;
 }
 .navbar-brand p span { /* Star-K */
-  vertical-align: middle;
+  /* vertical-align: middle; - allign the text in the middle of the picture*/
+  vertical-align: bottom;
 }
 
+/*style for the menu starts here*/
+
 #nav-list {
-  margin-top: 10px;
+  margin-top: 7px;
 }
 #nav-list a {
-  color: #951C49;
+  color: black;
   text-align: center;
 }
 #nav-list a:hover {
   background: #E7E7E7;
 }
 #nav-list a span {
-  font-size: 1.8em;
+  font-size: 1.3em;
 }
 
 #phone {
@@ -67,14 +73,16 @@ body {
   text-align: right;
   padding-bottom: 0;
 }
-#phone div { /* We Deliver */
-  color: #557c3e;
+#phone div { /* available time */
+  color: white;
   text-align: right;
   padding-right: 15px;
 }
 
+/*styling of the collapsed drop down menu*/
+
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
-  border: 1px solid #61122f;
+  border: 1px solid black;
 }
 .navbar-header button.navbar-toggle {
   clear: both;
@@ -132,12 +140,13 @@ body {
   box-shadow: 0 1px 5px 1px #cccccc;
 }
 #menu-tile {
-  background: url('../images/menu-tile.jpg') no-repeat;
+  background: url('../images/pets.jpg') no-repeat;
   background-position: center;
 }
 #specials-tile {
-  background: url('../images/specials-tile.jpg') no-repeat;
+  background: url('../images/cats.jpg') no-repeat;
   background-position: center;
+  }
 }
 #menu-tile span, #specials-tile span, #map-tile span {
   position: absolute;
@@ -154,7 +163,7 @@ body {
 /* END HOME PAGE */
 
 /* MENU CATEGORIES PAGE */
-.category-tile { 
+.category-tile {
   position: relative;
   border: 2px solid #3F0C1F;
   overflow: hidden;
@@ -201,7 +210,7 @@ body {
 }
 .menu-item-photo {
   position: relative;
-  border: 2px solid #3F0C1F; 
+  border: 2px solid #3F0C1F;
   overflow: hidden;
   padding: 0;
   margin-right: -15px;
@@ -233,8 +242,9 @@ h3.menu-item-title {
 /********** Large devices only **********/
 @media (min-width: 1200px) {
   .container .jumbotron {
-    background: url('../images/jumbotron_1200.jpg') no-repeat;
-    height: 675px;
+    background: url('../images/lg-dog.jpg') no-repeat;
+    height: 800px;
+    width: 1150px;
   }
 }
 
@@ -242,16 +252,26 @@ h3.menu-item-title {
 @media (min-width: 992px) and (max-width: 1199px) {
   /* Header */
   #logo-img {
-    background: url('../images/restaurant-logo_medium.png') no-repeat;
-    width: 100px;
-    height: 100px;
-    margin: 5px 5px 5px 0;
+    background: url('../images/logo_dog.png') no-repeat;
+    width: 127px;
+    height: 138px;
+    margin: 10px 15px 10px 0;
   }
+  .navbar-brand p { /* Text"in coopration with" */
+    color: #000;
+    text-transform: uppercase;
+    font-size: .7em;
+    margin-top: 15px;
+  }
+  .navbar-brand h1 {
+    font-size: 1.1em;
+  }
+
   /* End Header */
 
   /* Home Page */
   .container .jumbotron {
-    background: url('../images/jumbotron_992.jpg') no-repeat;
+    background: url('../images/PetProtection.jpg') no-repeat;
     height: 558px;
   }
   /* End Home Page */
@@ -259,10 +279,26 @@ h3.menu-item-title {
 
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
+
+  .navbar-brand {
+    padding-top: 10px;
+    height: 40px;
+  }
+
+/*margin for streuner logo*/
+
+.navbar-brand p { /* Text"in coopration with" */
+  color: #000;
+  text-transform: uppercase;
+  font-size: .6em;
+  margin-top: 20px;
+}
+
+
   /* Home Page */
   .container .jumbotron {
-    background: url('../images/jumbotron_768.jpg') no-repeat;
-    height: 432px;
+    background: url('../images/s_dog.jpg') no-repeat;
+    height: 588px;
   }
   /* End Home Page */
 }
@@ -276,6 +312,7 @@ h3.menu-item-title {
   }
   .navbar-brand h1 { /* Restaurant name */
     padding-top: 10px;
+    margin-bottom: 10px;
     font-size: 5vw; /* 1vw = 1% of viewport width */
   }
   .navbar-brand p { /* Kosher cert */
@@ -351,10 +388,10 @@ h3.menu-item-title {
   /* Header */
   .navbar-brand h1 { /* Restaurant name */
     padding-top: 5px;
-    font-size: 6vw;
+    font-size: 4.5vw;
   }
   /* End Header */
-  
+
   /* Home page */
   #menu-tile, #specials-tile {
     width: 280px;
@@ -370,6 +407,3 @@ h3.menu-item-title {
     width: 100%;
   }
 }
-
-
-
