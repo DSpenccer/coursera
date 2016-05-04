@@ -451,3 +451,7 @@ p.menu-item-details {
   margin-left: auto;
   margin-right: auto;
 }
+
+h6 {
+  text-align: center;
+}
