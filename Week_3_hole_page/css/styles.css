@@ -22,7 +22,8 @@ body {
 
 
 .navbar-brand {
-  padding-top: 25px; /*padding of the company name*/
+  padding-top: 25px;
+  padding-bottom: 5px; /*padding of the company name*/
 }
 .navbar-brand h1 { /* Restaurant name */
   font-family: 'Lora', serif;
@@ -43,11 +44,12 @@ body {
   color: #000;
   text-transform: uppercase;
   font-size: .9em;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 .navbar-brand p span { /* Star-K */
   /* vertical-align: middle; - allign the text in the middle of the picture*/
   vertical-align: bottom;
+  margin-top: 0;
 }
 
 /*style for the menu starts here*/
@@ -144,7 +146,7 @@ body {
   background-position: center;
 }
 #specials-tile {
-  background: url('../images/cats.jpg') no-repeat;
+  background: url('../images/Present.jpg') no-repeat;
   background-position: center;
   }
 }
@@ -171,7 +173,7 @@ body {
   height: 200px;
   margin: 0 auto 15px;
 }
-.category-tile span {
+#home-tiles span {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -183,8 +185,14 @@ body {
   color: #fff;
   opacity: .8;
 }
-.category-tile:hover {
-  box-shadow: 0 1px 5px 1px #cccccc;
+#menu-tile:hover {
+  box-shadow: 0 2px 10px 2px red;
+}
+#specials-tile:hover {
+  box-shadow: 0 2px 10px 2px red;
+}
+#map-tile:hover {
+  box-shadow: 0 2px 10px 2px red;
 }
 
 #menu-categories-title + div {
@@ -264,7 +272,7 @@ h3.menu-item-title {
     margin-top: 15px;
   }
   .navbar-brand h1 {
-    font-size: 1.1em;
+    font-size: 1.9em;
   }
 
   /* End Header */
@@ -291,9 +299,12 @@ h3.menu-item-title {
   color: #000;
   text-transform: uppercase;
   font-size: .6em;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
+#header-nav {
+  height: 130px;
+}
 
   /* Home Page */
   .container .jumbotron {
@@ -322,6 +333,15 @@ h3.menu-item-title {
   .navbar-brand p img { /* Star-K */
     height: 20px;
   }
+  #menu-tile {
+    background: url('../images/Katzeee2.jpg') no-repeat;
+    background-position: center;
+  }
+  #specials-tile {
+    background: url('../images/Geschenke.jpg') no-repeat;
+    background-position: center;
+    }
+
 
   #collapsable-nav a { /* Collapsed nav menu text */
     font-size: 1.2em;
@@ -367,7 +387,7 @@ h3.menu-item-title {
     padding: 0;
   }
   #menu-tile, #specials-tile {
-    width: 360px;
+
     margin: 0 auto 15px;
   }
 
@@ -406,4 +426,28 @@ h3.menu-item-title {
     float: left;
     width: 100%;
   }
+}
+
+h2 {
+  color: black;
+}
+
+#desc.text-center  {
+  color: black;
+}
+h3 {
+  color:black;
+}
+
+p.menu-item-details {
+  color:black;
+}
+
+.menu-item-price {
+    color:black;
+}
+
+#pokal {
+  margin-left: auto;
+  margin-right: auto;
 }
